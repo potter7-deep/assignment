@@ -216,39 +216,41 @@ body{
 
 /* Price Calculator Styles */
 .calc-table-container {
-    margin: 30px 0;
+    margin: 40px auto;
     background-color: #222;
-    padding: 50px;
-    border-radius: 5px;
-    border: 3px solid gold;
-    width: 100%;
-    display: block;
-    max-width: 800px;
+    padding: 80px;
+    border-radius: 10px;
+    border: 4px solid gold;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .calc-table {
     width: 100%;
     border-collapse: collapse;
     color: white;
-    font-size: 20px;
+    font-size: 24px;
+    min-width: 600px;
 }
 
 .calc-table th {
     background-color: green;
-    color: black;
-    padding: 25px;
+    color: bl40px;
     text-align: center;
     font-weight: bold;
-    border: 3px solid gold;
-    font-size: 22px;
+    border: 4px solid gold;
+    font-size: 28px;
 }
 
 .calc-table td {
     background-color: #333;
     color: white;
-    padding: 25px;
-    border: 2px solid #555;
+    padding: 40px;
+    border: 3px solid #555;
     text-align: center;
+    font-size: 24enter;
     font-size: 20px;
 }
 
@@ -262,12 +264,12 @@ body{
 
 .price-input {
     width: 100%;
-    padding: 15px;
+    padding: 20px;
     background-color: #444;
     color: gold;
-    border: 2px solid green;
-    border-radius: 5px;
-    font-size: 18px;
+    border: 3px solid green;
+    border-radius: 8px;
+    font-size: 22px;
 }
 
 .price-input:focus {
@@ -280,19 +282,19 @@ body{
     background-color: gold;
     color: black;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 28px;
 }
 
 .calc-btn {
     background-color: green;
     color: black;
-    padding: 20px 50px;
-    border: 3px solid gold;
-    border-radius: 8px;
-    font-size: 20px;
+    padding: 30px 80px;
+    border: 4px solid gold;
+    border-radius: 12px;
+    font-size: 24px;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 40px;
     transition: all 0.3s ease;
 }
 
