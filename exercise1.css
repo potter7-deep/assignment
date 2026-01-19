@@ -1,0 +1,210 @@
+body{
+    background-color: black;
+}
+
+#hero{
+    color: white;
+    background-color: green;
+    padding: 10px;
+}
+
+#header ul li a{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#header ul li {
+    margin: 0;
+    padding: 0;
+}
+
+#header .welcome {
+    flex: 1 1 auto;
+    text-align: left;
+}
+
+#header nav {
+    flex: 0 0 auto;
+}
+
+#header{
+    height: 67px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#header ul li a{
+    margin: 0;
+    padding: 0;
+}
+
+#header .welcome {
+    flex: 1 1 auto;
+    text-align: left;
+}
+
+#header nav {
+    flex: 0 0 auto;
+}
+
+#header ul li a:hover{
+    cursor: pointer;
+    font-size: 23px;
+    color: green;
+    transition-duration: 1000ms;
+    text-decoration: none;
+}
+
+#main {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+#side-bar{
+    background-color: black;
+    font-size: 22px;
+    color: white;
+    padding: 15px;
+    width: 50vw;
+    height: 100vh;
+    text-decoration: none;
+    position: sticky;
+    top: 95px;
+    align-self: flex-start;
+    z-index: 900;
+    align-items: center;
+    text-align: left;
+}
+
+#side-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#side-bar ul li {
+    margin: 0 0 8px 0;
+    padding: 0;
+}
+
+#side-bar ul li:hover{
+    cursor: pointer;
+    font-size: 25px;
+    color: gold;
+    transition-duration: 1000ms;
+    text-decoration: none;
+}
+
+#home , #about, #academics, #research, #students, .dept-content {
+    margin-bottom: 20px;
+    font-size: 30px;
+    align-items: center;
+    text-align: left;
+    padding-top: 55px;
+}
+
+#home h2, #about h2, #academics h2, #research h2, #students h2, .dept-content h2 {
+    text-decoration: none;
+    color: gold;
+}
+
+.dept-content {
+    display: none;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    padding: 30px 20px;
+    margin-top: 40px;
+    border-top: 3px solid gold;
+    font-size: 16px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto 20px;
+}
+
+.footer-section h3 {
+    color: gold;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-section p {
+    line-height: 1.5;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: white;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 6px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    color: gold;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid #333;
+    color: #888;
+    font-size: 13px;
+}
