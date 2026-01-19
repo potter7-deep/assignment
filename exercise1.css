@@ -132,15 +132,20 @@ body{
     text-decoration: none;
 }
 
-#home , #about, #academics, #research, #students, .dept-content {
+#home , #about, #academics, #research, #students, .dept-content, #calculator {
     margin-bottom: 20px;
     font-size: 30px;
     align-items: center;
     text-align: left;
     padding-top: 55px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex: 1;
+    min-height: calc(100vh - 200px);
 }
 
-#home h2, #about h2, #academics h2, #research h2, #students h2, .dept-content h2 {
+#home h2, #about h2, #academics h2, #research h2, #students h2, .dept-content h2, #calculator h2 {
     text-decoration: none;
     color: gold;
 }
@@ -207,4 +212,95 @@ body{
     border-top: 1px solid #333;
     color: #888;
     font-size: 13px;
+}
+
+/* Price Calculator Styles */
+.calc-table-container {
+    margin: 30px 0;
+    background-color: #222;
+    padding: 50px;
+    border-radius: 5px;
+    border: 3px solid gold;
+    width: 100%;
+    display: block;
+    max-width: 800px;
+}
+
+.calc-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    font-size: 20px;
+}
+
+.calc-table th {
+    background-color: green;
+    color: bl25px;
+    text-align: center;
+    font-weight: bold;
+    border: 3px solid gold;
+    font-size: 22px;
+}
+
+.calc-table td {
+    background-color: #333;
+    color: white;
+    padding: 25px;
+    border: 2px solid #555;
+    text-align: center;
+    font-size: 20enter;
+    font-size: 16px;
+}
+
+.calc-table td:first-child {
+    text-align: center;
+}
+
+.calc-table td:nth-child(2) {
+    text-align: left;
+}
+
+.price-input {
+    width: 100%;
+    padding: 15px;
+    background-color: #444;
+    color: gold;
+    border: 2px solid green;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.price-input:focus {
+    outline: none;
+    border-color: gold;
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+}
+
+.total-row td {
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.calc-btn {
+    background-color: green;
+    color: black;
+    padding: 20px 50px;
+    border: 3px solid gold;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+
+.calc-btn:hover {
+    background-color: #22aa22;
+    transform: scale(1.05);
+}
+
+.calc-btn:active {
+    transform: scale(0.98);
 }

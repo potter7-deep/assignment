@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        div {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 14px;
+            text-align: left;
+            border: 1px solid #e0e0e0;
+        }
+
+        th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        td {
+            background: #f8f9fa;
+        }
+
+        tr:hover td {
+            background: #f0f0f0;
+            transition: background 0.2s ease;
+        }
+
+        tr:last-child td {
+            background: #e8e8ff;
+            font-weight: 600;
+        }
+
+        caption {
+            font-weight: bold;
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #333;
+            display: block;
+            text-align: center;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        input[type="number"]:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        input[type="number"]:hover {
+            border-color: #764ba2;
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 10px rgba(102, 126, 234, 0.4);
+        }
+
+        #total {
+            font-weight: bold;
+            color: #667eea;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <table>
+        <caption>Running total of all TextBoxes</caption>
+        <tr>
+            <th> No. </th>
+            <th> Item </th>
+            <th> Price </th>
+        </tr>
+        <tr>
+            <td> 1. </td>
+            <td> Milk: </td>
+            <td> <input type="number" id="item1"> </td>
+        </tr>
+        <tr>
+            <td> 2. </td>
+            <td> Bread: </td>
+            <td> <input type="number"  id="item2"> </td>
+        </tr>
+        <tr>
+            <td> 3. </td>
+            <td> Noodles: </td>
+            <td> <input type="number" id="item3"> </td>
+        </tr>
+        <tr>
+            <td> 4. </td>
+            <td> Cheese: </td>
+            <td> <input type="number" id="item4"> </td>
+        </tr>
+        <tr>
+            <td>  </td>
+            <td> <strong>Total Price</strong> </td>
+            <td id="total"></td>
+        </tr>
+    </table>
+    </div>
+    <br>
+
+    <button onclick="calculateTotal()">Calculate total price</button>
+
+    <script>
+        function calculateTotal(){
+            let item1 = document.getElementById("item1").value;
+            let item2 = document.getElementById("item2").value;
+            let item3 = document.getElementById("item3").value;
+            let item4 = document.getElementById("item4").value;
+
+            let total = parseFloat(item1) + parseFloat(item2) + parseFloat(item3) + parseFloat(item4);
+
+            document.getElementById("total").innerText = `Ksh ${total}`;
+}
+    </script>
+</body>
+</html>
